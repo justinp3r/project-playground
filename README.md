@@ -1,1 +1,0 @@
-This is a collection with all projects done by myself
