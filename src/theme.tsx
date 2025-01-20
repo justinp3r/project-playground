@@ -9,7 +9,7 @@ export const themeJustin = createTheme({
       contrastText: '#fff',
     },
     secondary: {
-      light: '#ff7961',
+      light: '#e8e9ff',
       main: '#e8e9ff',
       dark: '#ba000d',
       contrastText: '#000',
