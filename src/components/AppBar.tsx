@@ -3,13 +3,13 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import Tile from './Tile';
+import HomeButton from './HomeButton';
 
 export default function HeaderBar() {
   
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1 }} >
+      <AppBar position="static" color='primary.light' elevation={0}>
         <Toolbar>
           {/* <IconButton
             size="large"
@@ -20,14 +20,11 @@ export default function HeaderBar() {
           >
             <MenuIcon />
           </IconButton> */}
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Justins Projects
-          </Typography>
-          <Button color="inherit">See whats next</Button>
+          <HomeButton/>
+          <Button color="inherit">Kontakt</Button>
+          <Button color="inherit">Über</Button>
         </Toolbar>
       </AppBar>
-      <Tile text="Reddit Bot" height={128} width={512}></Tile>
-      <Tile text="TicTacToe" height={128} width={128}></Tile>
     </Box>
   );
 }
